@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Departments - MCRH</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+    .hero {
+      background: url('images/services-bg.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .overlay {
+      background: rgba(0, 64, 128, 0.6);
+      width: 100%;
+      padding: 60px 20px;
+    }
+    .content {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2.section-title {
+      background-color: #004080;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 32px;
+      text-align: center;
+    }
+    .department-block, .service-block {
+      background: white;
+      border-radius: 8px;
+      margin: 30px 0;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .department-info {
+      flex: 1 1 50%;
+      padding: 10px 20px;
+    }
+    .department-image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+    .department-image img {
+      max-width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .footer {
+      background: #004080;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .footer h3 {
+      margin-bottom: 10px;
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media(max-width: 768px) {
+      .department-block {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="images/migori-logo.png" alt="MCRH Logo" class="logo" />
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="overlay" data-aos="fade-down">
+      <h1>Our Departments & Services</h1>
+      <p>Comprehensive care with modern technology and compassionate service.</p>
+    </div>
+  </header>
+<!-- DEPARTMENTS SECTION -->
+<section class="content" id="departments">
+  <h2 class="section-title" data-aos="fade-up">Departments</h2>
+
+  <!-- Department Template (Images below text) -->
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Casualty</h3>
+      <p>Emergency trauma care operating 24/7 with rapid response, stabilization, and triage protocols integrated with county emergency services.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/casualty.jpg" alt="Casualty Department" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Outpatient</h3>
+      <p>Handles general consultations, chronic condition reviews, minor procedures, and referrals to specialist clinics.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/outpatient.jpg" alt="Outpatient Department" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Eye Centre</h3>
+      <p>Dedicated to diagnosing and treating eye conditions including cataracts, glaucoma, and refractive errors. Offers minor surgeries and screening camps.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/eye-centre.jpg" alt="Eye Centre" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Laboratory</h3>
+      <p>Modern diagnostics including hematology, microbiology, blood transfusion, biochemistry, and rapid disease testing.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/laboratory.jpg" alt="Laboratory" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Physiotherapy</h3>
+      <p>Rehabilitation for orthopedic injuries, stroke recovery, post-operative care, and chronic pain management.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/physiotherapy.jpg" alt="Physiotherapy" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Maternity & Newborn</h3>
+      <p>Comprehensive maternal and newborn care including delivery suites, NICU, antenatal, postnatal, and family planning services.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/maternity.jpg" alt="Maternity Department" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Radiology</h3>
+      <p>Imaging services including X-rays, ultrasound, and fluoroscopy. Supports diagnosis and surgical planning.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/radiology.jpg" alt="Radiology" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>CT Centre</h3>
+      <p>Advanced computed tomography scans to aid diagnosis of complex conditions including trauma, cancer, and vascular issues.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/ct-centre.jpg" alt="CT Centre" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>ENT</h3>
+      <p>Treats ear, nose, and throat conditions. Services include minor surgeries, audiology, and allergy testing.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/ent.jpg" alt="ENT Department" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>CCC (Comprehensive Care Clinic)</h3>
+      <p>Specialized HIV/AIDS care, TB screening, adherence counseling, and psychosocial support. Linked with national HIV programs.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/ccc.jpg" alt="CCC" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>ICT Department</h3>
+      <p>Maintains the hospital’s digital systems including Taifa Care biometric tablets, NHIF portals, and KHIS interoperability.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/ict-dept.jpg" alt="ICT Department" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Central Records</h3>
+      <p>Custodian of patient records, manages digitization, e-claims processing, NHIF linkage, and physical file archives.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/records-dept.jpg" alt="Records Department" />
+    </div>
+  </div>
+
+  <div class="department-block" data-aos="fade-up">
+    <div class="department-info">
+      <h3>Mother and Child Health</h3>
+      <p>Provides immunization, antenatal clinics, growth monitoring, and family planning services under one integrated unit.</p>
+    </div>
+    <div class="department-image">
+      <img src="images/mch.jpg" alt="Mother and Child Health" />
+    </div>
+  </div>
+</section>
+
+  <!-- SERVICES SECTION -->
+  <section class="content" id="services">
+    <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+
+    <div class="service-block" data-aos="fade-right">
+      <h3>Community Health & Outreach</h3>
+      <p>We engage the community through screenings, health talks, deworming, maternal care visits, and coordination with CHVs.</p>
+    </div>
+
+    <div class="service-block" data-aos="fade-left">
+      <h3>SHA Digital Claims – Taifa Care</h3>
+      <p>MCRH has adopted SHA’s Taifa Care system using biometric tablets launched in 2024 to support real-time cashless care claims.</p>
+    </div>
+
+    <div class="service-block" data-aos="fade-right">
+      <h3>Nutrition & Dietary Services</h3>
+      <p>Specialized diet planning for diabetes, hypertension, maternal cases, and malnutrition recovery.</p>
+    </div>
+
+    <div class="service-block" data-aos="fade-left">
+      <h3>Specialist Clinics</h3>
+      <p>Outpatient care by in-house and visiting consultants including surgeons, ENT specialists, cardiologists, and dermatologists.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h3>Migori County Referral Hospital</h3>
+        <p>Innovation, Compassion, and Excellence in Healthcare.</p>
+      </div>
+    </div>
+    <div class="footer-bottom" style="margin-top: 20px;">
+      <p>&copy; 2025 Migori County Referral Hospital. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>

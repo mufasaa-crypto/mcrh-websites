@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - MCRH</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+    .hero {
+      background: url('images/gate.jpg') center/cover no-repeat;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .overlay {
+      background: rgba(0, 64, 128, 0.7);
+      width: 100%;
+      padding: 60px 20px;
+    }
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2.section-title {
+      background-color: #004080;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .about-text {
+      flex: 1 1 50%;
+    }
+    .about-image {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+    .about-image img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    details {
+      background: #fff;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    summary {
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #004080;
+    }
+    summary::marker {
+      color: #004080;
+    }
+    .footer {
+      background: #004080;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    @media(max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="images/migori-logo.png" alt="MCRH Logo" class="logo" />
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="overlay" data-aos="zoom-in">
+      <h1>About Migori County Referral Hospital</h1>
+      <p>Learn more about our dedication to healthcare excellence.</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <section class="content">
+    <h2 class="section-title" data-aos="fade-up">Who We Are</h2>
+
+    <div class="about-section" data-aos="fade-up">
+      <div class="about-image">
+        <img src="images/gate.jpg" alt="Hospital Gate" />
+      </div>
+      <div class="about-text">
+        <p>Migori County Referral Hospital is a vital healthcare institution serving the people of Migori County and neighboring regions. With decades of medical excellence, we provide comprehensive, accessible, and patient-centered care using modern technology and compassionate service.</p>
+        <p>We are committed to the highest standards of ethics and professionalism while responding to the evolving needs of our growing population.</p>
+      </div>
+    </div>
+
+    <!-- ACCORDION DETAILS -->
+    <details data-aos="fade-up" open>
+      <summary>🎯 Our Mission</summary>
+      <p>To provide integrated, responsive, and high-quality client-centered promotive, preventive, curative, and rehabilitative healthcare services that are evidence-based and technologically driven.</p>
+    </details>
+
+    <details data-aos="fade-up">
+      <summary>👁 Our Vision</summary>
+      <p>To be a nationally and internationally competitive, productive, and healthy county.</p>
+    </details>
+
+    <details data-aos="fade-up">
+      <summary>🏆 Our Core Values</summary>
+      <ul>
+        <li><strong>Compassion:</strong> Care delivered with empathy, dignity, and respect.</li>
+        <li><strong>Excellence:</strong> Commitment to the highest standards in service delivery.</li>
+        <li><strong>Integrity:</strong> Ethical, honest, and transparent conduct in all we do.</li>
+        <li><strong>Teamwork:</strong> Collaborating across departments for optimal outcomes.</li>
+        <li><strong>Patient-Centeredness:</strong> Every decision made with our patients' best interests in mind.</li>
+      </ul>
+    </details>
+
+    <details data-aos="fade-up">
+      <summary>📜 Our History</summary>
+      <p>Established in the 1960s under colonial administration, the hospital evolved into a major referral facility post-devolution. Under Migori County Government, it has expanded infrastructure, staffing, and services, becoming a regional healthcare leader.</p>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>
+      <h3>Migori County Referral Hospital</h3>
+      <p>Innovation, Compassion, and Excellence in Healthcare.</p>
+      <p>&copy; 2025 Migori County Referral Hospital. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
+</body>
+</html>
